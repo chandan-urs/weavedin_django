@@ -5,8 +5,9 @@ from django.urls import path
 
 
 router = DefaultRouter()
-router.register('branch', views.BranchViewSet)
-router.register('item', views.ItemViewSet)
+router.register('branchs', views.BranchViewSet)
+router.register('items', views.ItemViewSet)
+router.register('variants', views.VariantViewSet)
 
 urlpatterns = [
     path('', include(router.urls)),

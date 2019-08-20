@@ -11,3 +11,7 @@ class BranchViewSet(viewsets.ModelViewSet):
 class ItemViewSet(viewsets.ModelViewSet):
     serializer_class = serializer.ItemSerializer
     queryset = models.Item.objects.all()
+
+class VariantViewSet(viewsets.ModelViewSet):
+    serializer_class = serializer.VariantSerializer
+    queryset = models.Variant.objects.all()

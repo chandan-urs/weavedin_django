@@ -12,3 +12,9 @@ class ItemSerializer(serializers.ModelSerializer):
     class Meta:
         model = models.Item
         fields = ('id', 'name', 'branch', 'category', 'product_code', 'created_on')
+
+
+class VariantSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = models.Variant
+        exclude = ('properties',)
